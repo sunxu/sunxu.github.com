@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "text": "Hello World !", 
+      "tags": "", 
+      "loc": "/posts/2013/04/first-blood.html", 
+      "title": "First Blood"
+    }, 
+    {
+      "text": "hi, world.", 
+      "tags": "", 
+      "loc": "/stories/about.html", 
+      "title": "About me"
+    }
+  ]
+}

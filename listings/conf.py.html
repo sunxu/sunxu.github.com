@@ -1,0 +1,969 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="utf-8"><meta name="description" content="conf.py"><meta name="author" content="Sun Xu"><title>conf.py | Just Do IT</title><link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"><link href="../assets/css/rst.css" rel="stylesheet" type="text/css"><link href="../assets/css/code.css" rel="stylesheet" type="text/css"><link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css"><link href="../assets/css/slides.css" rel="stylesheet" type="text/css"><link href="../assets/css/theme.css" rel="stylesheet" type="text/css"><!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]--><link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml"></head><body>
+<!-- Menubar -->
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </a>
+
+            <a class="brand" href="../">
+            Just Do IT
+            </a>
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <ul class="nav"><li><a href="../archive.html">Archives</a>
+            </li><li><a href="../categories/index.html">Tags</a>
+            </li><li><a href="../galleries/index.html">Galleries</a>
+            </li><li><a href="../stories/about.html">About</a>
+            </li><li><a href="../rss.xml">RSS</a>
+
+                </li></ul><!-- Custom search --><form method="get" id="search" action="http://duckduckgo.com/" class="navbar-form pull-left">
+<input type="hidden" name="sites" value="http://sunxu.name"><input type="hidden" name="k8" value="#444444"><input type="hidden" name="k9" value="#D51920"><input type="hidden" name="kt" value="h"><input type="text" name="q" maxlength="255" placeholder="Search…" class="span2" style="margin-top: 4px;"><input type="submit" value="DuckDuckGo Search" style="visibility: hidden;"></form>
+<!-- End of custom search -->
+
+                <ul class="nav pull-right"></ul></div>
+        </div>
+    </div>
+</div>
+<!-- End of Menubar -->
+<div class="container-fluid" id="container-fluid">
+    <!--Body content-->
+    <div class="row-fluid">
+    <div class="span2"></div>
+    <div class="span8">
+    
+<ul class="breadcrumb"><li><a href=".">/listings</a>
+        </li><li><a href="#">/conf.py.html</a>
+</li></ul><ul class="unstyled"></ul><table class="codetable"><tr><td class="linenos"><div class="linenodiv"><pre><a href="conf.py.html#confpy-1">  1</a>
+<a href="conf.py.html#confpy-2">  2</a>
+<a href="conf.py.html#confpy-3">  3</a>
+<a href="conf.py.html#confpy-4">  4</a>
+<a href="conf.py.html#confpy-5">  5</a>
+<a href="conf.py.html#confpy-6">  6</a>
+<a href="conf.py.html#confpy-7">  7</a>
+<a href="conf.py.html#confpy-8">  8</a>
+<a href="conf.py.html#confpy-9">  9</a>
+<a href="conf.py.html#confpy-10"> 10</a>
+<a href="conf.py.html#confpy-11"> 11</a>
+<a href="conf.py.html#confpy-12"> 12</a>
+<a href="conf.py.html#confpy-13"> 13</a>
+<a href="conf.py.html#confpy-14"> 14</a>
+<a href="conf.py.html#confpy-15"> 15</a>
+<a href="conf.py.html#confpy-16"> 16</a>
+<a href="conf.py.html#confpy-17"> 17</a>
+<a href="conf.py.html#confpy-18"> 18</a>
+<a href="conf.py.html#confpy-19"> 19</a>
+<a href="conf.py.html#confpy-20"> 20</a>
+<a href="conf.py.html#confpy-21"> 21</a>
+<a href="conf.py.html#confpy-22"> 22</a>
+<a href="conf.py.html#confpy-23"> 23</a>
+<a href="conf.py.html#confpy-24"> 24</a>
+<a href="conf.py.html#confpy-25"> 25</a>
+<a href="conf.py.html#confpy-26"> 26</a>
+<a href="conf.py.html#confpy-27"> 27</a>
+<a href="conf.py.html#confpy-28"> 28</a>
+<a href="conf.py.html#confpy-29"> 29</a>
+<a href="conf.py.html#confpy-30"> 30</a>
+<a href="conf.py.html#confpy-31"> 31</a>
+<a href="conf.py.html#confpy-32"> 32</a>
+<a href="conf.py.html#confpy-33"> 33</a>
+<a href="conf.py.html#confpy-34"> 34</a>
+<a href="conf.py.html#confpy-35"> 35</a>
+<a href="conf.py.html#confpy-36"> 36</a>
+<a href="conf.py.html#confpy-37"> 37</a>
+<a href="conf.py.html#confpy-38"> 38</a>
+<a href="conf.py.html#confpy-39"> 39</a>
+<a href="conf.py.html#confpy-40"> 40</a>
+<a href="conf.py.html#confpy-41"> 41</a>
+<a href="conf.py.html#confpy-42"> 42</a>
+<a href="conf.py.html#confpy-43"> 43</a>
+<a href="conf.py.html#confpy-44"> 44</a>
+<a href="conf.py.html#confpy-45"> 45</a>
+<a href="conf.py.html#confpy-46"> 46</a>
+<a href="conf.py.html#confpy-47"> 47</a>
+<a href="conf.py.html#confpy-48"> 48</a>
+<a href="conf.py.html#confpy-49"> 49</a>
+<a href="conf.py.html#confpy-50"> 50</a>
+<a href="conf.py.html#confpy-51"> 51</a>
+<a href="conf.py.html#confpy-52"> 52</a>
+<a href="conf.py.html#confpy-53"> 53</a>
+<a href="conf.py.html#confpy-54"> 54</a>
+<a href="conf.py.html#confpy-55"> 55</a>
+<a href="conf.py.html#confpy-56"> 56</a>
+<a href="conf.py.html#confpy-57"> 57</a>
+<a href="conf.py.html#confpy-58"> 58</a>
+<a href="conf.py.html#confpy-59"> 59</a>
+<a href="conf.py.html#confpy-60"> 60</a>
+<a href="conf.py.html#confpy-61"> 61</a>
+<a href="conf.py.html#confpy-62"> 62</a>
+<a href="conf.py.html#confpy-63"> 63</a>
+<a href="conf.py.html#confpy-64"> 64</a>
+<a href="conf.py.html#confpy-65"> 65</a>
+<a href="conf.py.html#confpy-66"> 66</a>
+<a href="conf.py.html#confpy-67"> 67</a>
+<a href="conf.py.html#confpy-68"> 68</a>
+<a href="conf.py.html#confpy-69"> 69</a>
+<a href="conf.py.html#confpy-70"> 70</a>
+<a href="conf.py.html#confpy-71"> 71</a>
+<a href="conf.py.html#confpy-72"> 72</a>
+<a href="conf.py.html#confpy-73"> 73</a>
+<a href="conf.py.html#confpy-74"> 74</a>
+<a href="conf.py.html#confpy-75"> 75</a>
+<a href="conf.py.html#confpy-76"> 76</a>
+<a href="conf.py.html#confpy-77"> 77</a>
+<a href="conf.py.html#confpy-78"> 78</a>
+<a href="conf.py.html#confpy-79"> 79</a>
+<a href="conf.py.html#confpy-80"> 80</a>
+<a href="conf.py.html#confpy-81"> 81</a>
+<a href="conf.py.html#confpy-82"> 82</a>
+<a href="conf.py.html#confpy-83"> 83</a>
+<a href="conf.py.html#confpy-84"> 84</a>
+<a href="conf.py.html#confpy-85"> 85</a>
+<a href="conf.py.html#confpy-86"> 86</a>
+<a href="conf.py.html#confpy-87"> 87</a>
+<a href="conf.py.html#confpy-88"> 88</a>
+<a href="conf.py.html#confpy-89"> 89</a>
+<a href="conf.py.html#confpy-90"> 90</a>
+<a href="conf.py.html#confpy-91"> 91</a>
+<a href="conf.py.html#confpy-92"> 92</a>
+<a href="conf.py.html#confpy-93"> 93</a>
+<a href="conf.py.html#confpy-94"> 94</a>
+<a href="conf.py.html#confpy-95"> 95</a>
+<a href="conf.py.html#confpy-96"> 96</a>
+<a href="conf.py.html#confpy-97"> 97</a>
+<a href="conf.py.html#confpy-98"> 98</a>
+<a href="conf.py.html#confpy-99"> 99</a>
+<a href="conf.py.html#confpy-100">100</a>
+<a href="conf.py.html#confpy-101">101</a>
+<a href="conf.py.html#confpy-102">102</a>
+<a href="conf.py.html#confpy-103">103</a>
+<a href="conf.py.html#confpy-104">104</a>
+<a href="conf.py.html#confpy-105">105</a>
+<a href="conf.py.html#confpy-106">106</a>
+<a href="conf.py.html#confpy-107">107</a>
+<a href="conf.py.html#confpy-108">108</a>
+<a href="conf.py.html#confpy-109">109</a>
+<a href="conf.py.html#confpy-110">110</a>
+<a href="conf.py.html#confpy-111">111</a>
+<a href="conf.py.html#confpy-112">112</a>
+<a href="conf.py.html#confpy-113">113</a>
+<a href="conf.py.html#confpy-114">114</a>
+<a href="conf.py.html#confpy-115">115</a>
+<a href="conf.py.html#confpy-116">116</a>
+<a href="conf.py.html#confpy-117">117</a>
+<a href="conf.py.html#confpy-118">118</a>
+<a href="conf.py.html#confpy-119">119</a>
+<a href="conf.py.html#confpy-120">120</a>
+<a href="conf.py.html#confpy-121">121</a>
+<a href="conf.py.html#confpy-122">122</a>
+<a href="conf.py.html#confpy-123">123</a>
+<a href="conf.py.html#confpy-124">124</a>
+<a href="conf.py.html#confpy-125">125</a>
+<a href="conf.py.html#confpy-126">126</a>
+<a href="conf.py.html#confpy-127">127</a>
+<a href="conf.py.html#confpy-128">128</a>
+<a href="conf.py.html#confpy-129">129</a>
+<a href="conf.py.html#confpy-130">130</a>
+<a href="conf.py.html#confpy-131">131</a>
+<a href="conf.py.html#confpy-132">132</a>
+<a href="conf.py.html#confpy-133">133</a>
+<a href="conf.py.html#confpy-134">134</a>
+<a href="conf.py.html#confpy-135">135</a>
+<a href="conf.py.html#confpy-136">136</a>
+<a href="conf.py.html#confpy-137">137</a>
+<a href="conf.py.html#confpy-138">138</a>
+<a href="conf.py.html#confpy-139">139</a>
+<a href="conf.py.html#confpy-140">140</a>
+<a href="conf.py.html#confpy-141">141</a>
+<a href="conf.py.html#confpy-142">142</a>
+<a href="conf.py.html#confpy-143">143</a>
+<a href="conf.py.html#confpy-144">144</a>
+<a href="conf.py.html#confpy-145">145</a>
+<a href="conf.py.html#confpy-146">146</a>
+<a href="conf.py.html#confpy-147">147</a>
+<a href="conf.py.html#confpy-148">148</a>
+<a href="conf.py.html#confpy-149">149</a>
+<a href="conf.py.html#confpy-150">150</a>
+<a href="conf.py.html#confpy-151">151</a>
+<a href="conf.py.html#confpy-152">152</a>
+<a href="conf.py.html#confpy-153">153</a>
+<a href="conf.py.html#confpy-154">154</a>
+<a href="conf.py.html#confpy-155">155</a>
+<a href="conf.py.html#confpy-156">156</a>
+<a href="conf.py.html#confpy-157">157</a>
+<a href="conf.py.html#confpy-158">158</a>
+<a href="conf.py.html#confpy-159">159</a>
+<a href="conf.py.html#confpy-160">160</a>
+<a href="conf.py.html#confpy-161">161</a>
+<a href="conf.py.html#confpy-162">162</a>
+<a href="conf.py.html#confpy-163">163</a>
+<a href="conf.py.html#confpy-164">164</a>
+<a href="conf.py.html#confpy-165">165</a>
+<a href="conf.py.html#confpy-166">166</a>
+<a href="conf.py.html#confpy-167">167</a>
+<a href="conf.py.html#confpy-168">168</a>
+<a href="conf.py.html#confpy-169">169</a>
+<a href="conf.py.html#confpy-170">170</a>
+<a href="conf.py.html#confpy-171">171</a>
+<a href="conf.py.html#confpy-172">172</a>
+<a href="conf.py.html#confpy-173">173</a>
+<a href="conf.py.html#confpy-174">174</a>
+<a href="conf.py.html#confpy-175">175</a>
+<a href="conf.py.html#confpy-176">176</a>
+<a href="conf.py.html#confpy-177">177</a>
+<a href="conf.py.html#confpy-178">178</a>
+<a href="conf.py.html#confpy-179">179</a>
+<a href="conf.py.html#confpy-180">180</a>
+<a href="conf.py.html#confpy-181">181</a>
+<a href="conf.py.html#confpy-182">182</a>
+<a href="conf.py.html#confpy-183">183</a>
+<a href="conf.py.html#confpy-184">184</a>
+<a href="conf.py.html#confpy-185">185</a>
+<a href="conf.py.html#confpy-186">186</a>
+<a href="conf.py.html#confpy-187">187</a>
+<a href="conf.py.html#confpy-188">188</a>
+<a href="conf.py.html#confpy-189">189</a>
+<a href="conf.py.html#confpy-190">190</a>
+<a href="conf.py.html#confpy-191">191</a>
+<a href="conf.py.html#confpy-192">192</a>
+<a href="conf.py.html#confpy-193">193</a>
+<a href="conf.py.html#confpy-194">194</a>
+<a href="conf.py.html#confpy-195">195</a>
+<a href="conf.py.html#confpy-196">196</a>
+<a href="conf.py.html#confpy-197">197</a>
+<a href="conf.py.html#confpy-198">198</a>
+<a href="conf.py.html#confpy-199">199</a>
+<a href="conf.py.html#confpy-200">200</a>
+<a href="conf.py.html#confpy-201">201</a>
+<a href="conf.py.html#confpy-202">202</a>
+<a href="conf.py.html#confpy-203">203</a>
+<a href="conf.py.html#confpy-204">204</a>
+<a href="conf.py.html#confpy-205">205</a>
+<a href="conf.py.html#confpy-206">206</a>
+<a href="conf.py.html#confpy-207">207</a>
+<a href="conf.py.html#confpy-208">208</a>
+<a href="conf.py.html#confpy-209">209</a>
+<a href="conf.py.html#confpy-210">210</a>
+<a href="conf.py.html#confpy-211">211</a>
+<a href="conf.py.html#confpy-212">212</a>
+<a href="conf.py.html#confpy-213">213</a>
+<a href="conf.py.html#confpy-214">214</a>
+<a href="conf.py.html#confpy-215">215</a>
+<a href="conf.py.html#confpy-216">216</a>
+<a href="conf.py.html#confpy-217">217</a>
+<a href="conf.py.html#confpy-218">218</a>
+<a href="conf.py.html#confpy-219">219</a>
+<a href="conf.py.html#confpy-220">220</a>
+<a href="conf.py.html#confpy-221">221</a>
+<a href="conf.py.html#confpy-222">222</a>
+<a href="conf.py.html#confpy-223">223</a>
+<a href="conf.py.html#confpy-224">224</a>
+<a href="conf.py.html#confpy-225">225</a>
+<a href="conf.py.html#confpy-226">226</a>
+<a href="conf.py.html#confpy-227">227</a>
+<a href="conf.py.html#confpy-228">228</a>
+<a href="conf.py.html#confpy-229">229</a>
+<a href="conf.py.html#confpy-230">230</a>
+<a href="conf.py.html#confpy-231">231</a>
+<a href="conf.py.html#confpy-232">232</a>
+<a href="conf.py.html#confpy-233">233</a>
+<a href="conf.py.html#confpy-234">234</a>
+<a href="conf.py.html#confpy-235">235</a>
+<a href="conf.py.html#confpy-236">236</a>
+<a href="conf.py.html#confpy-237">237</a>
+<a href="conf.py.html#confpy-238">238</a>
+<a href="conf.py.html#confpy-239">239</a>
+<a href="conf.py.html#confpy-240">240</a>
+<a href="conf.py.html#confpy-241">241</a>
+<a href="conf.py.html#confpy-242">242</a>
+<a href="conf.py.html#confpy-243">243</a>
+<a href="conf.py.html#confpy-244">244</a>
+<a href="conf.py.html#confpy-245">245</a>
+<a href="conf.py.html#confpy-246">246</a>
+<a href="conf.py.html#confpy-247">247</a>
+<a href="conf.py.html#confpy-248">248</a>
+<a href="conf.py.html#confpy-249">249</a>
+<a href="conf.py.html#confpy-250">250</a>
+<a href="conf.py.html#confpy-251">251</a>
+<a href="conf.py.html#confpy-252">252</a>
+<a href="conf.py.html#confpy-253">253</a>
+<a href="conf.py.html#confpy-254">254</a>
+<a href="conf.py.html#confpy-255">255</a>
+<a href="conf.py.html#confpy-256">256</a>
+<a href="conf.py.html#confpy-257">257</a>
+<a href="conf.py.html#confpy-258">258</a>
+<a href="conf.py.html#confpy-259">259</a>
+<a href="conf.py.html#confpy-260">260</a>
+<a href="conf.py.html#confpy-261">261</a>
+<a href="conf.py.html#confpy-262">262</a>
+<a href="conf.py.html#confpy-263">263</a>
+<a href="conf.py.html#confpy-264">264</a>
+<a href="conf.py.html#confpy-265">265</a>
+<a href="conf.py.html#confpy-266">266</a>
+<a href="conf.py.html#confpy-267">267</a>
+<a href="conf.py.html#confpy-268">268</a>
+<a href="conf.py.html#confpy-269">269</a>
+<a href="conf.py.html#confpy-270">270</a>
+<a href="conf.py.html#confpy-271">271</a>
+<a href="conf.py.html#confpy-272">272</a>
+<a href="conf.py.html#confpy-273">273</a>
+<a href="conf.py.html#confpy-274">274</a>
+<a href="conf.py.html#confpy-275">275</a>
+<a href="conf.py.html#confpy-276">276</a>
+<a href="conf.py.html#confpy-277">277</a>
+<a href="conf.py.html#confpy-278">278</a>
+<a href="conf.py.html#confpy-279">279</a>
+<a href="conf.py.html#confpy-280">280</a>
+<a href="conf.py.html#confpy-281">281</a>
+<a href="conf.py.html#confpy-282">282</a>
+<a href="conf.py.html#confpy-283">283</a>
+<a href="conf.py.html#confpy-284">284</a>
+<a href="conf.py.html#confpy-285">285</a>
+<a href="conf.py.html#confpy-286">286</a>
+<a href="conf.py.html#confpy-287">287</a>
+<a href="conf.py.html#confpy-288">288</a>
+<a href="conf.py.html#confpy-289">289</a>
+<a href="conf.py.html#confpy-290">290</a>
+<a href="conf.py.html#confpy-291">291</a>
+<a href="conf.py.html#confpy-292">292</a>
+<a href="conf.py.html#confpy-293">293</a>
+<a href="conf.py.html#confpy-294">294</a>
+<a href="conf.py.html#confpy-295">295</a>
+<a href="conf.py.html#confpy-296">296</a>
+<a href="conf.py.html#confpy-297">297</a>
+<a href="conf.py.html#confpy-298">298</a>
+<a href="conf.py.html#confpy-299">299</a>
+<a href="conf.py.html#confpy-300">300</a>
+<a href="conf.py.html#confpy-301">301</a>
+<a href="conf.py.html#confpy-302">302</a>
+<a href="conf.py.html#confpy-303">303</a>
+<a href="conf.py.html#confpy-304">304</a>
+<a href="conf.py.html#confpy-305">305</a>
+<a href="conf.py.html#confpy-306">306</a>
+<a href="conf.py.html#confpy-307">307</a>
+<a href="conf.py.html#confpy-308">308</a>
+<a href="conf.py.html#confpy-309">309</a>
+<a href="conf.py.html#confpy-310">310</a>
+<a href="conf.py.html#confpy-311">311</a>
+<a href="conf.py.html#confpy-312">312</a>
+<a href="conf.py.html#confpy-313">313</a>
+<a href="conf.py.html#confpy-314">314</a>
+<a href="conf.py.html#confpy-315">315</a>
+<a href="conf.py.html#confpy-316">316</a>
+<a href="conf.py.html#confpy-317">317</a>
+<a href="conf.py.html#confpy-318">318</a>
+<a href="conf.py.html#confpy-319">319</a>
+<a href="conf.py.html#confpy-320">320</a>
+<a href="conf.py.html#confpy-321">321</a>
+<a href="conf.py.html#confpy-322">322</a>
+<a href="conf.py.html#confpy-323">323</a>
+<a href="conf.py.html#confpy-324">324</a>
+<a href="conf.py.html#confpy-325">325</a>
+<a href="conf.py.html#confpy-326">326</a>
+<a href="conf.py.html#confpy-327">327</a>
+<a href="conf.py.html#confpy-328">328</a>
+<a href="conf.py.html#confpy-329">329</a>
+<a href="conf.py.html#confpy-330">330</a>
+<a href="conf.py.html#confpy-331">331</a>
+<a href="conf.py.html#confpy-332">332</a>
+<a href="conf.py.html#confpy-333">333</a>
+<a href="conf.py.html#confpy-334">334</a>
+<a href="conf.py.html#confpy-335">335</a>
+<a href="conf.py.html#confpy-336">336</a>
+<a href="conf.py.html#confpy-337">337</a>
+<a href="conf.py.html#confpy-338">338</a>
+<a href="conf.py.html#confpy-339">339</a>
+<a href="conf.py.html#confpy-340">340</a>
+<a href="conf.py.html#confpy-341">341</a>
+<a href="conf.py.html#confpy-342">342</a>
+<a href="conf.py.html#confpy-343">343</a>
+<a href="conf.py.html#confpy-344">344</a>
+<a href="conf.py.html#confpy-345">345</a>
+<a href="conf.py.html#confpy-346">346</a>
+<a href="conf.py.html#confpy-347">347</a>
+<a href="conf.py.html#confpy-348">348</a>
+<a href="conf.py.html#confpy-349">349</a>
+<a href="conf.py.html#confpy-350">350</a>
+<a href="conf.py.html#confpy-351">351</a>
+<a href="conf.py.html#confpy-352">352</a>
+<a href="conf.py.html#confpy-353">353</a>
+<a href="conf.py.html#confpy-354">354</a>
+<a href="conf.py.html#confpy-355">355</a>
+<a href="conf.py.html#confpy-356">356</a>
+<a href="conf.py.html#confpy-357">357</a>
+<a href="conf.py.html#confpy-358">358</a>
+<a href="conf.py.html#confpy-359">359</a>
+<a href="conf.py.html#confpy-360">360</a>
+<a href="conf.py.html#confpy-361">361</a>
+<a href="conf.py.html#confpy-362">362</a>
+<a href="conf.py.html#confpy-363">363</a>
+<a href="conf.py.html#confpy-364">364</a>
+<a href="conf.py.html#confpy-365">365</a>
+<a href="conf.py.html#confpy-366">366</a>
+<a href="conf.py.html#confpy-367">367</a>
+<a href="conf.py.html#confpy-368">368</a>
+<a href="conf.py.html#confpy-369">369</a>
+<a href="conf.py.html#confpy-370">370</a>
+<a href="conf.py.html#confpy-371">371</a>
+<a href="conf.py.html#confpy-372">372</a>
+<a href="conf.py.html#confpy-373">373</a>
+<a href="conf.py.html#confpy-374">374</a>
+<a href="conf.py.html#confpy-375">375</a>
+<a href="conf.py.html#confpy-376">376</a>
+<a href="conf.py.html#confpy-377">377</a>
+<a href="conf.py.html#confpy-378">378</a>
+<a href="conf.py.html#confpy-379">379</a>
+<a href="conf.py.html#confpy-380">380</a>
+<a href="conf.py.html#confpy-381">381</a>
+<a href="conf.py.html#confpy-382">382</a>
+<a href="conf.py.html#confpy-383">383</a>
+<a href="conf.py.html#confpy-384">384</a>
+<a href="conf.py.html#confpy-385">385</a>
+<a href="conf.py.html#confpy-386">386</a>
+<a href="conf.py.html#confpy-387">387</a>
+<a href="conf.py.html#confpy-388">388</a>
+<a href="conf.py.html#confpy-389">389</a>
+<a href="conf.py.html#confpy-390">390</a>
+<a href="conf.py.html#confpy-391">391</a>
+<a href="conf.py.html#confpy-392">392</a>
+<a href="conf.py.html#confpy-393">393</a>
+<a href="conf.py.html#confpy-394">394</a>
+<a href="conf.py.html#confpy-395">395</a>
+<a href="conf.py.html#confpy-396">396</a>
+<a href="conf.py.html#confpy-397">397</a>
+<a href="conf.py.html#confpy-398">398</a>
+<a href="conf.py.html#confpy-399">399</a>
+<a href="conf.py.html#confpy-400">400</a>
+<a href="conf.py.html#confpy-401">401</a>
+<a href="conf.py.html#confpy-402">402</a>
+<a href="conf.py.html#confpy-403">403</a>
+<a href="conf.py.html#confpy-404">404</a>
+<a href="conf.py.html#confpy-405">405</a>
+<a href="conf.py.html#confpy-406">406</a>
+<a href="conf.py.html#confpy-407">407</a>
+<a href="conf.py.html#confpy-408">408</a>
+<a href="conf.py.html#confpy-409">409</a>
+<a href="conf.py.html#confpy-410">410</a>
+<a href="conf.py.html#confpy-411">411</a>
+<a href="conf.py.html#confpy-412">412</a>
+<a href="conf.py.html#confpy-413">413</a>
+<a href="conf.py.html#confpy-414">414</a>
+<a href="conf.py.html#confpy-415">415</a>
+<a href="conf.py.html#confpy-416">416</a>
+<a href="conf.py.html#confpy-417">417</a>
+<a href="conf.py.html#confpy-418">418</a>
+<a href="conf.py.html#confpy-419">419</a>
+<a href="conf.py.html#confpy-420">420</a>
+<a href="conf.py.html#confpy-421">421</a>
+<a href="conf.py.html#confpy-422">422</a>
+<a href="conf.py.html#confpy-423">423</a>
+<a href="conf.py.html#confpy-424">424</a>
+<a href="conf.py.html#confpy-425">425</a>
+<a href="conf.py.html#confpy-426">426</a>
+<a href="conf.py.html#confpy-427">427</a>
+<a href="conf.py.html#confpy-428">428</a>
+<a href="conf.py.html#confpy-429">429</a>
+<a href="conf.py.html#confpy-430">430</a>
+<a href="conf.py.html#confpy-431">431</a>
+<a href="conf.py.html#confpy-432">432</a>
+<a href="conf.py.html#confpy-433">433</a>
+<a href="conf.py.html#confpy-434">434</a>
+<a href="conf.py.html#confpy-435">435</a>
+<a href="conf.py.html#confpy-436">436</a>
+<a href="conf.py.html#confpy-437">437</a>
+<a href="conf.py.html#confpy-438">438</a>
+<a href="conf.py.html#confpy-439">439</a>
+<a href="conf.py.html#confpy-440">440</a>
+<a href="conf.py.html#confpy-441">441</a>
+<a href="conf.py.html#confpy-442">442</a>
+<a href="conf.py.html#confpy-443">443</a>
+<a href="conf.py.html#confpy-444">444</a>
+<a href="conf.py.html#confpy-445">445</a>
+<a href="conf.py.html#confpy-446">446</a>
+<a href="conf.py.html#confpy-447">447</a>
+<a href="conf.py.html#confpy-448">448</a>
+<a href="conf.py.html#confpy-449">449</a>
+<a href="conf.py.html#confpy-450">450</a>
+<a href="conf.py.html#confpy-451">451</a>
+<a href="conf.py.html#confpy-452">452</a>
+<a href="conf.py.html#confpy-453">453</a>
+<a href="conf.py.html#confpy-454">454</a>
+<a href="conf.py.html#confpy-455">455</a></pre></div></td><td class="code"><div class="code"><pre><a name="confpy-1"></a><span class="c"># -*- coding: utf-8 -*-</span>
+<a name="confpy-2"></a><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">unicode_literals</span>
+<a name="confpy-3"></a><span class="kn">import</span> <span class="nn">time</span>
+<a name="confpy-4"></a>
+<a name="confpy-5"></a><span class="c">##############################################</span>
+<a name="confpy-6"></a><span class="c"># Configuration, please edit</span>
+<a name="confpy-7"></a><span class="c">##############################################</span>
+<a name="confpy-8"></a>
+<a name="confpy-9"></a>
+<a name="confpy-10"></a><span class="c"># Data about this site</span>
+<a name="confpy-11"></a><span class="n">BLOG_AUTHOR</span> <span class="o">=</span> <span class="s">"Sun Xu"</span>
+<a name="confpy-12"></a><span class="n">BLOG_TITLE</span> <span class="o">=</span> <span class="s">"Just Do IT"</span>
+<a name="confpy-13"></a><span class="c"># This is the main URL for your site. It will be used</span>
+<a name="confpy-14"></a><span class="c"># in a prominent link</span>
+<a name="confpy-15"></a><span class="n">SITE_URL</span> <span class="o">=</span> <span class="s">"http://sunxu.name"</span>
+<a name="confpy-16"></a><span class="c"># This is the URL where nikola's output will be deployed.</span>
+<a name="confpy-17"></a><span class="c"># If not set, defaults to SITE_URL</span>
+<a name="confpy-18"></a><span class="c"># BASE_URL = "http://nikola.ralsina.com.ar"</span>
+<a name="confpy-19"></a><span class="n">BLOG_EMAIL</span> <span class="o">=</span> <span class="s">"sunxu.name@gmail.com"</span>
+<a name="confpy-20"></a><span class="n">BLOG_DESCRIPTION</span> <span class="o">=</span> <span class="s">"Just Do IT."</span>
+<a name="confpy-21"></a>
+<a name="confpy-22"></a><span class="c"># Nikola is multilingual!</span>
+<a name="confpy-23"></a><span class="c">#</span>
+<a name="confpy-24"></a><span class="c"># Currently supported languages are:</span>
+<a name="confpy-25"></a><span class="c">#   English -&gt; en</span>
+<a name="confpy-26"></a><span class="c">#   Greek -&gt; gr</span>
+<a name="confpy-27"></a><span class="c">#   German -&gt; de</span>
+<a name="confpy-28"></a><span class="c">#   French -&gt; fr</span>
+<a name="confpy-29"></a><span class="c">#   Polish -&gt; pl</span>
+<a name="confpy-30"></a><span class="c">#   Russian -&gt; ru</span>
+<a name="confpy-31"></a><span class="c">#   Spanish -&gt; es</span>
+<a name="confpy-32"></a><span class="c">#   Italian -&gt; it</span>
+<a name="confpy-33"></a><span class="c">#   Simplified Chinese -&gt; zh-cn</span>
+<a name="confpy-34"></a><span class="c">#</span>
+<a name="confpy-35"></a><span class="c"># If you want to use Nikola with a non-supported language you have to provide</span>
+<a name="confpy-36"></a><span class="c"># a module containing the necessary translations</span>
+<a name="confpy-37"></a><span class="c"># (p.e. look at the modules at: ./nikola/data/themes/default/messages/fr.py).</span>
+<a name="confpy-38"></a><span class="c"># If a specific post is not translated to a language, then the version</span>
+<a name="confpy-39"></a><span class="c"># in the default language will be shown instead.</span>
+<a name="confpy-40"></a>
+<a name="confpy-41"></a><span class="c"># What is the default language?</span>
+<a name="confpy-42"></a><span class="n">DEFAULT_LANG</span> <span class="o">=</span> <span class="s">"en"</span>
+<a name="confpy-43"></a>
+<a name="confpy-44"></a><span class="c"># What other languages do you have?</span>
+<a name="confpy-45"></a><span class="c"># The format is {"translationcode" : "path/to/translation" }</span>
+<a name="confpy-46"></a><span class="c"># the path will be used as a prefix for the generated pages location</span>
+<a name="confpy-47"></a><span class="n">TRANSLATIONS</span> <span class="o">=</span> <span class="p">{</span>
+<a name="confpy-48"></a>    <span class="n">DEFAULT_LANG</span><span class="p">:</span> <span class="s">""</span><span class="p">,</span>
+<a name="confpy-49"></a>    <span class="c"># Example for another language:</span>
+<a name="confpy-50"></a>    <span class="c"># "es": "./es",</span>
+<a name="confpy-51"></a><span class="p">}</span>
+<a name="confpy-52"></a>
+<a name="confpy-53"></a><span class="c"># Links for the sidebar / navigation bar.</span>
+<a name="confpy-54"></a><span class="c"># You should provide a key-value pair for each used language.</span>
+<a name="confpy-55"></a><span class="n">SIDEBAR_LINKS</span> <span class="o">=</span> <span class="p">{</span>
+<a name="confpy-56"></a>    <span class="n">DEFAULT_LANG</span><span class="p">:</span> <span class="p">(</span>
+<a name="confpy-57"></a>        <span class="p">(</span><span class="s">'/archive.html'</span><span class="p">,</span> <span class="s">'Archives'</span><span class="p">),</span>
+<a name="confpy-58"></a>        <span class="p">(</span><span class="s">'/categories/index.html'</span><span class="p">,</span> <span class="s">'Tags'</span><span class="p">),</span>
+<a name="confpy-59"></a>        <span class="p">(</span><span class="s">'/galleries/index.html'</span><span class="p">,</span> <span class="s">'Galleries'</span><span class="p">),</span>
+<a name="confpy-60"></a>        <span class="p">(</span><span class="s">'/stories/about.html'</span><span class="p">,</span> <span class="s">'About'</span><span class="p">),</span>
+<a name="confpy-61"></a>        <span class="p">(</span><span class="s">'/rss.xml'</span><span class="p">,</span> <span class="s">'RSS'</span><span class="p">),</span>
+<a name="confpy-62"></a>    <span class="p">),</span>
+<a name="confpy-63"></a><span class="p">}</span>
+<a name="confpy-64"></a>
+<a name="confpy-65"></a>
+<a name="confpy-66"></a><span class="c">##############################################</span>
+<a name="confpy-67"></a><span class="c"># Below this point, everything is optional</span>
+<a name="confpy-68"></a><span class="c">##############################################</span>
+<a name="confpy-69"></a>
+<a name="confpy-70"></a>
+<a name="confpy-71"></a><span class="c"># post_pages contains (wildcard, destination, template, use_in_feed) tuples.</span>
+<a name="confpy-72"></a><span class="c">#</span>
+<a name="confpy-73"></a><span class="c"># The wildcard is used to generate a list of reSt source files</span>
+<a name="confpy-74"></a><span class="c"># (whatever/thing.txt).</span>
+<a name="confpy-75"></a><span class="c"># That fragment must have an associated metadata file (whatever/thing.meta),</span>
+<a name="confpy-76"></a><span class="c"># and opcionally translated files (example for spanish, with code "es"):</span>
+<a name="confpy-77"></a><span class="c">#     whatever/thing.txt.es and whatever/thing.meta.es</span>
+<a name="confpy-78"></a><span class="c">#</span>
+<a name="confpy-79"></a><span class="c"># From those files, a set of HTML fragment files will be generated:</span>
+<a name="confpy-80"></a><span class="c"># cache/whatever/thing.html (and maybe cache/whatever/thing.html.es)</span>
+<a name="confpy-81"></a><span class="c">#</span>
+<a name="confpy-82"></a><span class="c"># These files are combinated with the template to produce rendered</span>
+<a name="confpy-83"></a><span class="c"># pages, which will be placed at</span>
+<a name="confpy-84"></a><span class="c"># output / TRANSLATIONS[lang] / destination / pagename.html</span>
+<a name="confpy-85"></a><span class="c">#</span>
+<a name="confpy-86"></a><span class="c"># where "pagename" is specified in the metadata file.</span>
+<a name="confpy-87"></a><span class="c">#</span>
+<a name="confpy-88"></a><span class="c"># if use_in_feed is True, then those posts will be added to the site's</span>
+<a name="confpy-89"></a><span class="c"># rss feeds.</span>
+<a name="confpy-90"></a><span class="c">#</span>
+<a name="confpy-91"></a>
+<a name="confpy-92"></a><span class="n">post_pages</span> <span class="o">=</span> <span class="p">(</span>
+<a name="confpy-93"></a>    <span class="p">(</span><span class="s">"posts/*.md"</span><span class="p">,</span> <span class="s">"posts"</span><span class="p">,</span> <span class="s">"post.tmpl"</span><span class="p">,</span> <span class="bp">True</span><span class="p">),</span>
+<a name="confpy-94"></a>    <span class="p">(</span><span class="s">"stories/*.md"</span><span class="p">,</span> <span class="s">"stories"</span><span class="p">,</span> <span class="s">"story.tmpl"</span><span class="p">,</span> <span class="bp">False</span><span class="p">),</span>
+<a name="confpy-95"></a><span class="p">)</span>
+<a name="confpy-96"></a>
+<a name="confpy-97"></a><span class="c"># One or more folders containing files to be copied as-is into the output.</span>
+<a name="confpy-98"></a><span class="c"># The format is a dictionary of "source" "relative destination".</span>
+<a name="confpy-99"></a><span class="c"># Default is:</span>
+<a name="confpy-100"></a><span class="c"># FILES_FOLDERS = {'files': '' }</span>
+<a name="confpy-101"></a><span class="c"># Which means copy 'files' into 'output'</span>
+<a name="confpy-102"></a><span class="n">FILES_FOLDERS</span> <span class="o">=</span> <span class="p">{</span><span class="s">'files'</span><span class="p">:</span> <span class="s">''</span> <span class="p">}</span>
+<a name="confpy-103"></a>
+<a name="confpy-104"></a><span class="c"># A mapping of languages to file-extensions that represent that language.</span>
+<a name="confpy-105"></a><span class="c"># Feel free to add or delete extensions to any list, but don't add any new</span>
+<a name="confpy-106"></a><span class="c"># compilers unless you write the interface for it yourself.</span>
+<a name="confpy-107"></a><span class="c">#</span>
+<a name="confpy-108"></a><span class="c"># 'rest' is reStructuredText</span>
+<a name="confpy-109"></a><span class="c"># 'markdown' is MarkDown</span>
+<a name="confpy-110"></a><span class="c"># 'html' assumes the file is html and just copies it</span>
+<a name="confpy-111"></a><span class="n">post_compilers</span> <span class="o">=</span> <span class="p">{</span>
+<a name="confpy-112"></a>    <span class="s">"rest"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.txt'</span><span class="p">,</span> <span class="s">'.rst'</span><span class="p">),</span>
+<a name="confpy-113"></a>    <span class="s">"markdown"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.md'</span><span class="p">,</span> <span class="s">'.mdown'</span><span class="p">,</span> <span class="s">'.markdown'</span><span class="p">),</span>
+<a name="confpy-114"></a>    <span class="s">"textile"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.textile'</span><span class="p">,),</span>
+<a name="confpy-115"></a>    <span class="s">"txt2tags"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.t2t'</span><span class="p">,),</span>
+<a name="confpy-116"></a>    <span class="s">"bbcode"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.bb'</span><span class="p">,),</span>
+<a name="confpy-117"></a>    <span class="s">"wiki"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.wiki'</span><span class="p">,),</span>
+<a name="confpy-118"></a>    <span class="s">"ipynb"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.ipynb'</span><span class="p">,),</span>
+<a name="confpy-119"></a>    <span class="s">"html"</span><span class="p">:</span> <span class="p">(</span><span class="s">'.html'</span><span class="p">,</span> <span class="s">'.htm'</span><span class="p">)</span>
+<a name="confpy-120"></a><span class="p">}</span>
+<a name="confpy-121"></a>
+<a name="confpy-122"></a><span class="c"># Create by default posts in one file format?</span>
+<a name="confpy-123"></a><span class="c"># Set to False for two-file posts, with separate metadata.</span>
+<a name="confpy-124"></a><span class="c"># ONE_FILE_POSTS = True</span>
+<a name="confpy-125"></a><span class="n">ONE_FILE_POSTS</span> <span class="o">=</span> <span class="bp">True</span>
+<a name="confpy-126"></a>
+<a name="confpy-127"></a><span class="c"># If this is set to True, then posts that are not translated to a language</span>
+<a name="confpy-128"></a><span class="c"># LANG will not be visible at all in the pages in that language.</span>
+<a name="confpy-129"></a><span class="c"># If set to False, the DEFAULT_LANG version will be displayed for</span>
+<a name="confpy-130"></a><span class="c"># untranslated posts.</span>
+<a name="confpy-131"></a><span class="c"># HIDE_UNTRANSLATED_POSTS = False</span>
+<a name="confpy-132"></a>
+<a name="confpy-133"></a><span class="c"># Paths for different autogenerated bits. These are combined with the</span>
+<a name="confpy-134"></a><span class="c"># translation paths.</span>
+<a name="confpy-135"></a>
+<a name="confpy-136"></a><span class="c"># Final locations are:</span>
+<a name="confpy-137"></a><span class="c"># output / TRANSLATION[lang] / TAG_PATH / index.html (list of tags)</span>
+<a name="confpy-138"></a><span class="c"># output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)</span>
+<a name="confpy-139"></a><span class="c"># output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)</span>
+<a name="confpy-140"></a><span class="c"># TAG_PATH = "categories"</span>
+<a name="confpy-141"></a>
+<a name="confpy-142"></a><span class="c"># If TAG_PAGES_ARE_INDEXES is set to True, each tag's page will contain</span>
+<a name="confpy-143"></a><span class="c"># the posts themselves. If set to False, it will be just a list of links.</span>
+<a name="confpy-144"></a><span class="c"># TAG_PAGES_ARE_INDEXES = True</span>
+<a name="confpy-145"></a>
+<a name="confpy-146"></a><span class="c"># Final location is output / TRANSLATION[lang] / INDEX_PATH / index-*.html</span>
+<a name="confpy-147"></a><span class="c"># INDEX_PATH = ""</span>
+<a name="confpy-148"></a><span class="c"># Final locations for the archives are:</span>
+<a name="confpy-149"></a><span class="c"># output / TRANSLATION[lang] / ARCHIVE_PATH / ARCHIVE_FILENAME</span>
+<a name="confpy-150"></a><span class="c"># output / TRANSLATION[lang] / ARCHIVE_PATH / YEAR / index.html</span>
+<a name="confpy-151"></a><span class="c"># ARCHIVE_PATH = ""</span>
+<a name="confpy-152"></a><span class="c"># ARCHIVE_FILENAME = "archive.html"</span>
+<a name="confpy-153"></a><span class="c"># Final locations are:</span>
+<a name="confpy-154"></a><span class="c"># output / TRANSLATION[lang] / RSS_PATH / rss.xml</span>
+<a name="confpy-155"></a><span class="c"># RSS_PATH = ""</span>
+<a name="confpy-156"></a>
+<a name="confpy-157"></a><span class="c"># Slug the Tag URL easier for users to type, special characters are</span>
+<a name="confpy-158"></a><span class="c"># often removed or replaced as well.</span>
+<a name="confpy-159"></a><span class="c"># SLUG_TAG_PATH = True</span>
+<a name="confpy-160"></a>
+<a name="confpy-161"></a><span class="c"># A list of redirection tuples, [("foo/from.html", "/bar/to.html")].</span>
+<a name="confpy-162"></a><span class="c">#</span>
+<a name="confpy-163"></a><span class="c"># A HTML file will be created in output/foo/from.html that redirects</span>
+<a name="confpy-164"></a><span class="c"># to the "/bar/to.html" URL. notice that the "from" side MUST be a</span>
+<a name="confpy-165"></a><span class="c"># relative URL.</span>
+<a name="confpy-166"></a><span class="c">#</span>
+<a name="confpy-167"></a><span class="c"># If you don't need any of these, just set to []</span>
+<a name="confpy-168"></a><span class="c"># REDIRECTIONS = []</span>
+<a name="confpy-169"></a><span class="n">REDIRECTIONS</span> <span class="o">=</span> <span class="p">[]</span>
+<a name="confpy-170"></a>
+<a name="confpy-171"></a><span class="c"># Commands to execute to deploy. Can be anything, for example,</span>
+<a name="confpy-172"></a><span class="c"># you may use rsync:</span>
+<a name="confpy-173"></a><span class="c"># "rsync -rav output/* joe@my.site:/srv/www/site"</span>
+<a name="confpy-174"></a><span class="c"># And then do a backup, or ping pingomatic.</span>
+<a name="confpy-175"></a><span class="c"># To do manual deployment, set it to []</span>
+<a name="confpy-176"></a><span class="c"># DEPLOY_COMMANDS = []</span>
+<a name="confpy-177"></a><span class="n">GIT_DIR</span> <span class="o">=</span> <span class="s">'--git-dir=output/.git --work-tree=output'</span>
+<a name="confpy-178"></a><span class="n">DEPLOY_COMMANDS</span> <span class="o">=</span> <span class="p">[</span>
+<a name="confpy-179"></a>    <span class="s">'rm -rf output'</span><span class="p">,</span> 
+<a name="confpy-180"></a>    <span class="s">'nikola build'</span><span class="p">,</span>
+<a name="confpy-181"></a>    <span class="s">'git init output'</span><span class="p">,</span>
+<a name="confpy-182"></a>    <span class="s">'git {git_dir} remote add origin </span><span class="se">\</span>
+<a name="confpy-183"></a><span class="s">            git@github.com:sunxu/sunxu.github.com.git'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">git_dir</span><span class="o">=</span><span class="n">GIT_DIR</span><span class="p">),</span>
+<a name="confpy-184"></a>    <span class="s">'git {git_dir} push origin :master; true'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">git_dir</span><span class="o">=</span><span class="n">GIT_DIR</span><span class="p">),</span>
+<a name="confpy-185"></a>    <span class="s">'git {git_dir} add .'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">git_dir</span><span class="o">=</span><span class="n">GIT_DIR</span><span class="p">),</span>
+<a name="confpy-186"></a>    <span class="s">'git {git_dir} commit -m "auto deployed by nikola"'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">git_dir</span><span class="o">=</span><span class="n">GIT_DIR</span><span class="p">),</span>
+<a name="confpy-187"></a>    <span class="s">'git {git_dir} push -u origin master'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">git_dir</span><span class="o">=</span><span class="n">GIT_DIR</span><span class="p">),</span>
+<a name="confpy-188"></a><span class="p">]</span>
+<a name="confpy-189"></a>
+<a name="confpy-190"></a><span class="c"># Where the output site should be located</span>
+<a name="confpy-191"></a><span class="c"># If you don't use an absolute path, it will be considered as relative</span>
+<a name="confpy-192"></a><span class="c"># to the location of conf.py</span>
+<a name="confpy-193"></a><span class="c"># OUTPUT_FOLDER = 'output'</span>
+<a name="confpy-194"></a>
+<a name="confpy-195"></a><span class="c"># where the "cache" of partial generated content should be located</span>
+<a name="confpy-196"></a><span class="c"># default: 'cache'</span>
+<a name="confpy-197"></a><span class="c"># CACHE_FOLDER = 'cache'</span>
+<a name="confpy-198"></a><span class="n">CACHE_FOLDER</span> <span class="o">=</span> <span class="s">'.cache'</span>
+<a name="confpy-199"></a>
+<a name="confpy-200"></a><span class="c"># Filters to apply to the output.</span>
+<a name="confpy-201"></a><span class="c"># A directory where the keys are either: a file extensions, or</span>
+<a name="confpy-202"></a><span class="c"># a tuple of file extensions.</span>
+<a name="confpy-203"></a><span class="c">#</span>
+<a name="confpy-204"></a><span class="c"># And the value is a list of commands to be applied in order.</span>
+<a name="confpy-205"></a><span class="c">#</span>
+<a name="confpy-206"></a><span class="c"># Each command must be either:</span>
+<a name="confpy-207"></a><span class="c">#</span>
+<a name="confpy-208"></a><span class="c"># A string containing a '%s' which will</span>
+<a name="confpy-209"></a><span class="c"># be replaced with a filename. The command *must* produce output</span>
+<a name="confpy-210"></a><span class="c"># in place.</span>
+<a name="confpy-211"></a><span class="c">#</span>
+<a name="confpy-212"></a><span class="c"># Or:</span>
+<a name="confpy-213"></a><span class="c">#</span>
+<a name="confpy-214"></a><span class="c"># A python callable, which will be called with the filename as</span>
+<a name="confpy-215"></a><span class="c"># argument.</span>
+<a name="confpy-216"></a><span class="c">#</span>
+<a name="confpy-217"></a><span class="c"># By default, there are no filters.</span>
+<a name="confpy-218"></a><span class="c"># FILTERS = {</span>
+<a name="confpy-219"></a><span class="c">#    ".jpg": ["jpegoptim --strip-all -m75 -v %s"],</span>
+<a name="confpy-220"></a><span class="c"># }</span>
+<a name="confpy-221"></a>
+<a name="confpy-222"></a><span class="c"># Create a gzipped copy of each generated file. Cheap server-side optimization.</span>
+<a name="confpy-223"></a><span class="c"># GZIP_FILES = False</span>
+<a name="confpy-224"></a><span class="c"># File extensions that will be compressed</span>
+<a name="confpy-225"></a><span class="c"># GZIP_EXTENSIONS = ('.txt', '.htm', '.html', '.css', '.js', '.json')</span>
+<a name="confpy-226"></a>
+<a name="confpy-227"></a><span class="c"># #############################################################################</span>
+<a name="confpy-228"></a><span class="c"># Image Gallery Options</span>
+<a name="confpy-229"></a><span class="c"># #############################################################################</span>
+<a name="confpy-230"></a>
+<a name="confpy-231"></a><span class="c"># Galleries are folders in galleries/</span>
+<a name="confpy-232"></a><span class="c"># Final location of galleries will be output / GALLERY_PATH / gallery_name</span>
+<a name="confpy-233"></a><span class="c"># GALLERY_PATH = "galleries"</span>
+<a name="confpy-234"></a><span class="c"># THUMBNAIL_SIZE = 180</span>
+<a name="confpy-235"></a><span class="c"># MAX_IMAGE_SIZE = 1280</span>
+<a name="confpy-236"></a><span class="c"># USE_FILENAME_AS_TITLE = True</span>
+<a name="confpy-237"></a><span class="n">USE_FILENAME_AS_TITLE</span> <span class="o">=</span> <span class="bp">True</span>
+<a name="confpy-238"></a>
+<a name="confpy-239"></a><span class="c"># #############################################################################</span>
+<a name="confpy-240"></a><span class="c"># HTML fragments and diverse things that are used by the templates</span>
+<a name="confpy-241"></a><span class="c"># #############################################################################</span>
+<a name="confpy-242"></a>
+<a name="confpy-243"></a><span class="c"># Data about post-per-page indexes</span>
+<a name="confpy-244"></a><span class="c"># INDEXES_TITLE = ""  # If this is empty, the default is BLOG_TITLE</span>
+<a name="confpy-245"></a><span class="c"># INDEXES_PAGES = ""  # If this is empty, the default is 'old posts page %d' translated</span>
+<a name="confpy-246"></a>
+<a name="confpy-247"></a><span class="c"># Name of the theme to use.</span>
+<a name="confpy-248"></a><span class="c"># THEME = 'site'</span>
+<a name="confpy-249"></a><span class="n">THEME</span> <span class="o">=</span> <span class="s">'custom'</span>
+<a name="confpy-250"></a>
+<a name="confpy-251"></a><span class="c"># Color scheme to be used for code blocks. If your theme provide "assets/css/code.css" this</span>
+<a name="confpy-252"></a><span class="c"># is ignored.</span>
+<a name="confpy-253"></a><span class="c"># Can be any of autumn borland bw colorful default emacs friendly fruity manni monokai</span>
+<a name="confpy-254"></a><span class="c"># murphy native pastie perldoc rrt tango trac vim vs</span>
+<a name="confpy-255"></a><span class="c"># CODE_COLOR_SCHEME = default</span>
+<a name="confpy-256"></a>
+<a name="confpy-257"></a><span class="c"># If you use 'site-reveal' theme you can select several subthemes</span>
+<a name="confpy-258"></a><span class="c"># THEME_REVEAL_CONGIF_SUBTHEME = 'sky' # You can also use: beige/serif/simple/night/default</span>
+<a name="confpy-259"></a>
+<a name="confpy-260"></a><span class="c"># Again, if you use 'site-reveal' theme you can select several transitions between the slides</span>
+<a name="confpy-261"></a><span class="c"># THEME_REVEAL_CONGIF_TRANSITION = 'cube' # You can also use: page/concave/linear/none/default</span>
+<a name="confpy-262"></a>
+<a name="confpy-263"></a><span class="c"># date format used to display post dates. (str used by datetime.datetime.strftime)</span>
+<a name="confpy-264"></a><span class="c"># DATE_FORMAT = '%Y-%m-%d %H:%M'</span>
+<a name="confpy-265"></a>
+<a name="confpy-266"></a><span class="c"># FAVICONS contains (name, file, size) tuples.</span>
+<a name="confpy-267"></a><span class="c"># Used for create favicon link like this:</span>
+<a name="confpy-268"></a><span class="c"># &lt;link rel="name" href="file" sizes="size"/&gt;</span>
+<a name="confpy-269"></a><span class="c"># about favicons, see: http://www.netmagazine.com/features/create-perfect-favicon</span>
+<a name="confpy-270"></a><span class="c"># FAVICONS = {</span>
+<a name="confpy-271"></a><span class="c">#     ("icon", "/favicon.ico", "16x16"),</span>
+<a name="confpy-272"></a><span class="c">#     ("icon", "/icon_128x128.png", "128x128"),</span>
+<a name="confpy-273"></a><span class="c"># }</span>
+<a name="confpy-274"></a>
+<a name="confpy-275"></a><span class="c"># Show only teasers in the index pages? Defaults to False.</span>
+<a name="confpy-276"></a><span class="c"># INDEX_TEASERS = False</span>
+<a name="confpy-277"></a><span class="n">INDEX_TEASERS</span> <span class="o">=</span> <span class="bp">True</span>
+<a name="confpy-278"></a>
+<a name="confpy-279"></a><span class="c"># A HTML fragment describing the license, for the sidebar. Default is "".</span>
+<a name="confpy-280"></a><span class="c"># I recommend using the Creative Commons' wizard:</span>
+<a name="confpy-281"></a><span class="c"># http://creativecommons.org/choose/</span>
+<a name="confpy-282"></a><span class="c"># LICENSE = """</span>
+<a name="confpy-283"></a><span class="c"># &lt;a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/ar/"&gt;</span>
+<a name="confpy-284"></a><span class="c"># &lt;img alt="Creative Commons License BY-NC-SA"</span>
+<a name="confpy-285"></a><span class="c"># style="border-width:0; margin-bottom:12px;"</span>
+<a name="confpy-286"></a><span class="c"># src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"&gt;&lt;/a&gt;"""</span>
+<a name="confpy-287"></a>
+<a name="confpy-288"></a><span class="c"># A small copyright notice for the page footer (in HTML).</span>
+<a name="confpy-289"></a><span class="c"># Default is ''</span>
+<a name="confpy-290"></a><span class="n">CONTENT_FOOTER</span> <span class="o">=</span> <span class="s">"""</span>
+<a name="confpy-291"></a><span class="s">Contents &amp;copy; {date} &lt;a href="mailto:{email}"&gt;{author}&lt;/a&gt;</span>
+<a name="confpy-292"></a><span class="s">  |  Powered by &lt;a href="http://nikola.ralsina.com.ar" target="_blank"&gt;Nikola&lt;/a&gt; </span>
+<a name="confpy-293"></a><span class="s">  and &lt;a href="https://github.com" target="_blank"&gt;GitHub&lt;/a&gt;</span>
+<a name="confpy-294"></a><span class="s">  |  Theme is &lt;a href="http://bootswatch.com/cerulean/" target="_blank"&gt;Cerulean&lt;/a&gt;</span>
+<a name="confpy-295"></a><span class="s">"""</span>
+<a name="confpy-296"></a><span class="n">CONTENT_FOOTER</span> <span class="o">=</span> <span class="n">CONTENT_FOOTER</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">email</span><span class="o">=</span><span class="n">BLOG_EMAIL</span><span class="p">,</span>
+<a name="confpy-297"></a>                                       <span class="n">author</span><span class="o">=</span><span class="n">BLOG_AUTHOR</span><span class="p">,</span>
+<a name="confpy-298"></a>                                       <span class="n">date</span><span class="o">=</span><span class="n">time</span><span class="o">.</span><span class="n">gmtime</span><span class="p">()</span><span class="o">.</span><span class="n">tm_year</span><span class="p">)</span>
+<a name="confpy-299"></a>
+<a name="confpy-300"></a><span class="c"># To enable comments via Disqus, you need to create a forum at</span>
+<a name="confpy-301"></a><span class="c"># http://disqus.com, and set DISQUS_FORUM to the short name you selected.</span>
+<a name="confpy-302"></a><span class="c"># If you want to disable comments, set it to False.</span>
+<a name="confpy-303"></a><span class="c"># Default is "nikolademo", used by the demo sites</span>
+<a name="confpy-304"></a><span class="c"># DISQUS_FORUM = "nikolademo"</span>
+<a name="confpy-305"></a><span class="n">DISQUS_FORUM</span> <span class="o">=</span> <span class="bp">False</span>
+<a name="confpy-306"></a>
+<a name="confpy-307"></a><span class="c"># Create index.html for story folders?</span>
+<a name="confpy-308"></a><span class="c"># STORY_INDEX = False</span>
+<a name="confpy-309"></a><span class="n">STORY_INDEX</span> <span class="o">=</span> <span class="bp">True</span>
+<a name="confpy-310"></a><span class="c"># Enable comments on story pages?</span>
+<a name="confpy-311"></a><span class="c"># COMMENTS_IN_STORIES = False</span>
+<a name="confpy-312"></a><span class="c"># Enable comments on picture gallery pages?</span>
+<a name="confpy-313"></a><span class="c"># COMMENTS_IN_GALLERIES = False</span>
+<a name="confpy-314"></a>
+<a name="confpy-315"></a><span class="c"># If a link ends in /index.html, drop the index.html part.</span>
+<a name="confpy-316"></a><span class="c"># http://mysite/foo/bar/index.html =&gt; http://mysite/foo/bar/</span>
+<a name="confpy-317"></a><span class="c"># Default = False</span>
+<a name="confpy-318"></a><span class="c"># STRIP_INDEX_HTML = False</span>
+<a name="confpy-319"></a>
+<a name="confpy-320"></a><span class="c"># Do you want a add a Mathjax config file?</span>
+<a name="confpy-321"></a><span class="c"># MATHJAX_CONFIG = ""</span>
+<a name="confpy-322"></a>
+<a name="confpy-323"></a><span class="c"># If you are using the compile-ipynb plugin, just add this one:</span>
+<a name="confpy-324"></a><span class="c">#MATHJAX_CONFIG = """</span>
+<a name="confpy-325"></a><span class="c">#&lt;script type="text/x-mathjax-config"&gt;</span>
+<a name="confpy-326"></a><span class="c">#MathJax.Hub.Config({</span>
+<a name="confpy-327"></a><span class="c">#    tex2jax: {</span>
+<a name="confpy-328"></a><span class="c">#        inlineMath: [ ['$','$'], ["\\\(","\\\)"] ],</span>
+<a name="confpy-329"></a><span class="c">#        displayMath: [ ['$$','$$'], ["\\\[","\\\]"] ]</span>
+<a name="confpy-330"></a><span class="c">#    },</span>
+<a name="confpy-331"></a><span class="c">#    displayAlign: 'left', // Change this to 'center' to center equations.</span>
+<a name="confpy-332"></a><span class="c">#    "HTML-CSS": {</span>
+<a name="confpy-333"></a><span class="c">#        styles: {'.MathJax_Display': {"margin": 0}}</span>
+<a name="confpy-334"></a><span class="c">#    }</span>
+<a name="confpy-335"></a><span class="c">#});</span>
+<a name="confpy-336"></a><span class="c">#&lt;/script&gt;</span>
+<a name="confpy-337"></a><span class="c">#"""</span>
+<a name="confpy-338"></a>
+<a name="confpy-339"></a><span class="c"># Enable Addthis social buttons?</span>
+<a name="confpy-340"></a><span class="c"># Defaults to true</span>
+<a name="confpy-341"></a><span class="c"># ADD_THIS_BUTTONS = True</span>
+<a name="confpy-342"></a><span class="n">ADD_THIS_BUTTONS</span> <span class="o">=</span> <span class="bp">False</span>
+<a name="confpy-343"></a>
+<a name="confpy-344"></a><span class="c"># Modify the number of Post per Index Page</span>
+<a name="confpy-345"></a><span class="c"># Defaults to 10</span>
+<a name="confpy-346"></a><span class="c"># INDEX_DISPLAY_POST_COUNT = 10</span>
+<a name="confpy-347"></a>
+<a name="confpy-348"></a><span class="c"># RSS_LINK is a HTML fragment to link the RSS or Atom feeds. If set to None,</span>
+<a name="confpy-349"></a><span class="c"># the base.tmpl will use the feed Nikola generates. However, you may want to</span>
+<a name="confpy-350"></a><span class="c"># change it for a feedburner feed or something else.</span>
+<a name="confpy-351"></a><span class="c"># RSS_LINK = None</span>
+<a name="confpy-352"></a>
+<a name="confpy-353"></a><span class="c"># Show only teasers in the RSS feed? Default to True</span>
+<a name="confpy-354"></a><span class="c"># RSS_TEASERS = True</span>
+<a name="confpy-355"></a><span class="n">RSS_TEASERS</span> <span class="o">=</span> <span class="bp">True</span>
+<a name="confpy-356"></a>
+<a name="confpy-357"></a><span class="c"># A search form to search this site, for the sidebar. You can use a google</span>
+<a name="confpy-358"></a><span class="c"># custom search (http://www.google.com/cse/)</span>
+<a name="confpy-359"></a><span class="c"># Or a duckduckgo search: https://duckduckgo.com/search_box.html</span>
+<a name="confpy-360"></a><span class="c"># Default is no search form.</span>
+<a name="confpy-361"></a><span class="c"># SEARCH_FORM = ""</span>
+<a name="confpy-362"></a><span class="c">#</span>
+<a name="confpy-363"></a><span class="c"># This search form works for any site and looks good in the "site" theme where it</span>
+<a name="confpy-364"></a><span class="c"># appears on the navigation bar</span>
+<a name="confpy-365"></a><span class="n">SEARCH_FORM</span> <span class="o">=</span> <span class="s">"""</span>
+<a name="confpy-366"></a><span class="s">&lt;!-- Custom search --&gt;</span>
+<a name="confpy-367"></a><span class="s">&lt;form method="get" id="search" action="http://duckduckgo.com/"</span>
+<a name="confpy-368"></a><span class="s"> class="navbar-form pull-left"&gt;</span>
+<a name="confpy-369"></a><span class="s">&lt;input type="hidden" name="sites" value="</span><span class="si">%s</span><span class="s">"/&gt;</span>
+<a name="confpy-370"></a><span class="s">&lt;input type="hidden" name="k8" value="#444444"/&gt;</span>
+<a name="confpy-371"></a><span class="s">&lt;input type="hidden" name="k9" value="#D51920"/&gt;</span>
+<a name="confpy-372"></a><span class="s">&lt;input type="hidden" name="kt" value="h"/&gt;</span>
+<a name="confpy-373"></a><span class="s">&lt;input type="text" name="q" maxlength="255"</span>
+<a name="confpy-374"></a><span class="s"> placeholder="Search&amp;hellip;" class="span2" style="margin-top: 4px;"/&gt;</span>
+<a name="confpy-375"></a><span class="s">&lt;input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" /&gt;</span>
+<a name="confpy-376"></a><span class="s">&lt;/form&gt;</span>
+<a name="confpy-377"></a><span class="s">&lt;!-- End of custom search --&gt;</span>
+<a name="confpy-378"></a><span class="s">"""</span> <span class="o">%</span> <span class="n">SITE_URL</span>
+<a name="confpy-379"></a>
+<a name="confpy-380"></a><span class="c"># Also, there is a local search plugin you can use.</span>
+<a name="confpy-381"></a>
+<a name="confpy-382"></a><span class="c"># Use content distribution networks for jquery and twitter-bootstrap css and js</span>
+<a name="confpy-383"></a><span class="c"># If this is True, jquery is served from the Google CDN and twitter-bootstrap</span>
+<a name="confpy-384"></a><span class="c"># is served from the NetDNA CDN</span>
+<a name="confpy-385"></a><span class="c"># Set this to False if you want to host your site without requiring access to</span>
+<a name="confpy-386"></a><span class="c"># external resources.</span>
+<a name="confpy-387"></a><span class="c"># USE_CDN = False</span>
+<a name="confpy-388"></a>
+<a name="confpy-389"></a><span class="c"># Extra things you want in the pages HEAD tag. This will be added right</span>
+<a name="confpy-390"></a><span class="c"># before &lt;/HEAD&gt;</span>
+<a name="confpy-391"></a><span class="c"># EXTRA_HEAD_DATA = ""</span>
+<a name="confpy-392"></a><span class="c"># Google analytics or whatever else you use. Added to the bottom of &lt;body&gt;</span>
+<a name="confpy-393"></a><span class="c"># in the default template (base.tmpl).</span>
+<a name="confpy-394"></a><span class="c"># ANALYTICS = ""</span>
+<a name="confpy-395"></a>
+<a name="confpy-396"></a><span class="c"># The possibility to extract metadata from the filename by using a</span>
+<a name="confpy-397"></a><span class="c"># regular expression.</span>
+<a name="confpy-398"></a><span class="c"># To make it work you need to name parts of your regular expression.</span>
+<a name="confpy-399"></a><span class="c"># The following names will be used to extract metadata:</span>
+<a name="confpy-400"></a><span class="c"># - title</span>
+<a name="confpy-401"></a><span class="c"># - slug</span>
+<a name="confpy-402"></a><span class="c"># - date</span>
+<a name="confpy-403"></a><span class="c"># - tags</span>
+<a name="confpy-404"></a><span class="c"># - link</span>
+<a name="confpy-405"></a><span class="c"># - description</span>
+<a name="confpy-406"></a><span class="c">#</span>
+<a name="confpy-407"></a><span class="c"># An example re is the following:</span>
+<a name="confpy-408"></a><span class="c"># '(?P&lt;date&gt;\d{4}-\d{2}-\d{2})-(?P&lt;slug&gt;.*)-(?P&lt;title&gt;.*)\.md'</span>
+<a name="confpy-409"></a><span class="c"># FILE_METADATA_REGEXP = None</span>
+<a name="confpy-410"></a>
+<a name="confpy-411"></a><span class="c"># Nikola supports Twitter Card summaries / Open Graph.</span>
+<a name="confpy-412"></a><span class="c"># Twitter cards make it possible for you to attach media to Tweets</span>
+<a name="confpy-413"></a><span class="c"># that link to your content.</span>
+<a name="confpy-414"></a><span class="c">#</span>
+<a name="confpy-415"></a><span class="c"># IMPORTANT:</span>
+<a name="confpy-416"></a><span class="c"># Please note, that you need to opt-in for using Twitter Cards!</span>
+<a name="confpy-417"></a><span class="c"># To do this please visit https://dev.twitter.com/form/participate-twitter-cards</span>
+<a name="confpy-418"></a><span class="c">#</span>
+<a name="confpy-419"></a><span class="c"># Uncomment and modify to following lines to match your accounts.</span>
+<a name="confpy-420"></a><span class="c"># Specifying the id for either 'site' or 'creator' will be preferred</span>
+<a name="confpy-421"></a><span class="c"># over the cleartext username. Specifying an ID is not necessary.</span>
+<a name="confpy-422"></a><span class="c"># Displaying images is currently not supported.</span>
+<a name="confpy-423"></a><span class="c"># TWITTER_CARD = {</span>
+<a name="confpy-424"></a><span class="c">#     # 'use_twitter_cards': True,  # enable Twitter Cards / Open Graph</span>
+<a name="confpy-425"></a><span class="c">#     # 'site': '@website',  # twitter nick for the website</span>
+<a name="confpy-426"></a><span class="c">#     # 'site:id': 123456,  # Same as site, but the website's Twitter user ID instead.</span>
+<a name="confpy-427"></a><span class="c">#     # 'creator': '@username',  # Username for the content creator / author.</span>
+<a name="confpy-428"></a><span class="c">#     # 'creator:id': 654321,  # Same as creator, but the Twitter user's ID.</span>
+<a name="confpy-429"></a><span class="c"># }</span>
+<a name="confpy-430"></a>
+<a name="confpy-431"></a>
+<a name="confpy-432"></a><span class="c"># If you want to use formatted post time in W3C-DTF Format(ex. 2012-03-30T23:00:00+02:00),</span>
+<a name="confpy-433"></a><span class="c"># set timzone if you want a localized posted date.</span>
+<a name="confpy-434"></a><span class="c">#</span>
+<a name="confpy-435"></a><span class="c"># TIMEZONE = 'Europe/Zurich'</span>
+<a name="confpy-436"></a>
+<a name="confpy-437"></a><span class="c"># If webassets is installed, bundle JS and CSS to make site loading faster</span>
+<a name="confpy-438"></a><span class="c"># USE_BUNDLES = True</span>
+<a name="confpy-439"></a>
+<a name="confpy-440"></a><span class="c"># Plugins you don't want to use. Be careful :-)</span>
+<a name="confpy-441"></a><span class="c"># DISABLED_PLUGINS = ["render_galleries"]</span>
+<a name="confpy-442"></a>
+<a name="confpy-443"></a><span class="c"># Experimental plugins - use at your own risk.</span>
+<a name="confpy-444"></a><span class="c"># They probably need some manual adjustments - please see their respective readme.</span>
+<a name="confpy-445"></a><span class="c"># ENABLED_EXTRAS = [</span>
+<a name="confpy-446"></a><span class="c">#     'planetoid',</span>
+<a name="confpy-447"></a><span class="c">#     'ipynb',</span>
+<a name="confpy-448"></a><span class="c">#     'localsearch',</span>
+<a name="confpy-449"></a><span class="c">#     'mustache',</span>
+<a name="confpy-450"></a><span class="c"># ]</span>
+<a name="confpy-451"></a>
+<a name="confpy-452"></a><span class="c"># Put in global_context things you want available on all your templates.</span>
+<a name="confpy-453"></a><span class="c"># It can be anything, data, functions, modules, etc.</span>
+<a name="confpy-454"></a>
+<a name="confpy-455"></a><span class="n">GLOBAL_CONTEXT</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+</td></tr></table></div>
+    </div>
+    <!--End of body content-->
+</div>
+<div class="footerbox">
+    
+Contents © 2013 <a href="mailto:sunxu.name@gmail.com">Sun Xu</a>
+  |  Powered by <a href="http://nikola.ralsina.com.ar" target="_blank">Nikola</a> 
+  and <a href="https://github.com" target="_blank">GitHub</a>
+  |  Theme is <a href="http://bootswatch.com/cerulean/" target="_blank">Cerulean</a>
+
+</div>
+
+
+
+            <script src="../assets/js/jquery-1.7.2.min.js" type="text/javascript"></script><script src="../assets/js/bootstrap.min.js" type="text/javascript"></script><script src="../assets/js/jquery.colorbox-min.js" type="text/javascript"></script><script src="../assets/js/slides.min.jquery.js" type="text/javascript"></script><script type="text/javascript">jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"80%",maxHeight:"80%",scalePhotos:true});</script></body></html>
