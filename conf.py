@@ -290,7 +290,8 @@ INDEX_TEASERS = True
 # Default is ''
 CONTENT_FOOTER = """
 Contents &copy; {date} <a href="mailto:{email}">{author}</a>
-  |  Powered by <a href="http://nikola.ralsina.com.ar" target="_blank">Nikola</a>
+  |  Powered by <a href="http://nikola.ralsina.com.ar" target="_blank">Nikola</a> 
+  and <a href="https://github.com" target="_blank">GitHub</a>
   |  Theme is <a href="http://bootswatch.com/cerulean/" target="_blank">Cerulean</a>
 """
 CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
